@@ -1,0 +1,45 @@
+{
+    "name": "peopleinside/flarum-ext-first-post-approval",
+    "description": "Hold posts and discussions from new users for approval",
+    "keywords": [
+        "flarum",
+        "approval"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "flarum/core": "^2.0-rc.3"
+    },
+    "authors": [
+        {
+            "name": "Clark Winkelmann",
+            "homepage": "https://clarkwinkelmann.com/",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/PeopleInside/flarum-ext-first-post-approval/issues",
+        "source": "https://github.com/PeopleInside/flarum-ext-first-post-approval",
+        "forum": ""
+    },
+    "autoload": {
+        "psr-4": {
+            "peopleinside\\FirstPostApproval\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "First Post Approval",
+            "category": "moderation",
+            "icon": {
+                "name": "fas fa-check",
+                "backgroundColor": "#684ba6",
+                "color": "#fff"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
