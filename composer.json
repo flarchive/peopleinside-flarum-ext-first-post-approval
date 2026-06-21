@@ -1,0 +1,34 @@
+{
+  "name": "peopleinside/flarum-ext-first-post-approval",
+  "description": "Flarum extension to hold the first posts of new users for moderator approval.",
+  "type": "flarum-extension",
+  "keywords": ["flarum", "approval", "moderation", "spam"],
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Peopleinside",
+      "homepage": "https://github.com/PeopleInside/flarum-ext-first-post-approval"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "flarum/core": "^1.0 || ^2.0",
+    "flarum/approval": "*"
+  },
+  "suggest": {
+    "peopleinside/flarum-ext-antiflood": "Complements first-post approval by preventing rapid-fire posting from both new and existing users."
+  },
+  "autoload": {
+    "psr-4": {
+      "Peopleinside\\FirstPostApproval\\": "src/"
+    }
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "First Post Approval",
+      "icon": {
+        "name": "fas fa-user-check"
+      }
+    }
+  }
+}
