@@ -1,0 +1,12 @@
+{
+    "name": "@peopleinside/first-post-approval",
+    "private": true,
+    "dependencies": {
+        "flarum-tsconfig": "^2.0",
+        "flarum-webpack-config": "^3.0"
+    },
+    "scripts": {
+        "dev": "webpack --mode development --watch",
+        "build": "webpack --mode production"
+    }
+}
